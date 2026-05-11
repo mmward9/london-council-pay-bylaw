@@ -1,0 +1,49 @@
+name: Notify ward9.online of bylaw changes
+
+# Triggers a rebuild of mmward9/ward9.online when the rendered
+# bylaw output changes (i.e., after the render workflow has
+# committed an update to rendered/BYLAW.md).
+#
+# Requires a repo secret named WARD9_REPO_PAT with a fine-grained
+# PAT that has 'Contents: Read and write' on mmward9/ward9.online.
+# Without that secret, this workflow will fail silently — the
+# website's daily scheduled rebuild will still pick up changes
+# within 24 hours.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'rendered/BYLAW.md'
+      - 'rendered/examples/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: ${{ env.WARD9_REPO_PAT_AVAILABLE == 'true' || vars.NOTIFY_FORCE == 'true' }}
+    env:
+      WARD9_REPO_PAT_AVAILABLE: ${{ secrets.WARD9_REPO_PAT != '' }}
+    steps:
+      - name: Trigger website rebuild via repository_dispatch
+        run: |
+          if [ -z "${{ secrets.WARD9_REPO_PAT }}" ]; then
+            echo "WARD9_REPO_PAT secret not configured; skipping. Daily scheduled rebuild will still propagate changes."
+            exit 0
+          fi
+          response=$(curl -s -o /tmp/resp.json -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer ${{ secrets.WARD9_REPO_PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Content-Type: application/json" \
+            "https://api.github.com/repos/mmward9/ward9.online/dispatches" \
+            -d '{"event_type":"bylaw-updated","client_payload":{"source_commit":"${{ github.sha }}","source_message":"${{ github.event.head_commit.message }}"}}')
+          echo "HTTP $response"
+          cat /tmp/resp.json
+          if [ "$response" != "204" ]; then
+            echo "ERROR: dispatch failed with HTTP $response"
+            exit 1
+          fi
+          echo "Successfully triggered ward9.online rebuild"
