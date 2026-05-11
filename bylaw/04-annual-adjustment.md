@@ -6,4 +6,4 @@
 
 (c) **Pay increase on levy decrease.** If, in any fiscal year, the annual operating property-tax levy approved by Council is less than the prior year's annual operating property-tax levy, the remuneration of every Affected office shall be adjusted for the following fiscal year by the percentage change in CPI for the prior calendar year plus one percentage point, applied to the then-current baseline.
 
-(d) **Automatic calculation.** The adjustments in this clause shall be calculated by the Treasurer and shall take effect automatically without further action of Council.
+(d) **Administrative implementation.** Each adjustment under this clause is administrative implementation of the formula enacted by this bylaw, and shall be calculated and applied by the Treasurer as part of the budget preparation process without further action of Council.
