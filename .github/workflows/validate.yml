@@ -1,0 +1,27 @@
+name: Validate
+
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r build/requirements.txt
+      - name: Validate YAML files parse
+        run: |
+          python -c "import yaml; yaml.safe_load(open('parameters.yaml'))"
+          python -c "import yaml; yaml.safe_load(open('pledges/candidates.yaml'))"
+      - name: Render bylaw (will fail if templates are broken)
+        run: python build/render.py
+      - name: Check rendered output (uploaded as artifact)
+        run: cat rendered/BYLAW.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rendered-bylaw-preview
+          path: rendered/BYLAW.md

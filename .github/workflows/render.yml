@@ -1,0 +1,38 @@
+name: Render bylaw
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'parameters.yaml'
+      - 'bylaw/**'
+      - 'examples/**'
+      - 'build/**'
+      - '.github/workflows/render.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r build/requirements.txt
+      - name: Render
+        run: python build/render.py
+      - name: Commit rendered changes
+        run: |
+          git config user.name "ward9-bylaw-renderer"
+          git config user.email "renderer@ward9.online"
+          if [ -n "$(git status --porcelain rendered/)" ]; then
+            git add rendered/
+            git commit -m "render: rebuild from sources"
+            git push
+          else
+            echo "No changes to rendered/"
+          fi
