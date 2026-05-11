@@ -1,0 +1,54 @@
+name: Pledge as a candidate
+description: Register your public position on this bylaw as a candidate in the 2026 election.
+title: "[pledge] "
+labels:
+  - pledge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this if you are a registered candidate (or intending to register)
+        for the 2026 City of London municipal election and want to state
+        your position on this bylaw publicly. Your pledge will be verified
+        by direct contact before it is added to the public tracker.
+  - type: input
+    id: name
+    attributes:
+      label: Your full name
+    validations:
+      required: true
+  - type: dropdown
+    id: position
+    attributes:
+      label: Office you are seeking
+      options:
+        - Councillor
+        - Mayor
+    validations:
+      required: true
+  - type: input
+    id: ward
+    attributes:
+      label: Ward (if councillor)
+  - type: dropdown
+    id: status
+    attributes:
+      label: Your position
+      options:
+        - I will vote in favour if elected (supports)
+        - I will vote against if elected (opposes)
+        - I support with specific changes (conditional)
+    validations:
+      required: true
+  - type: textarea
+    id: statement
+    attributes:
+      label: Statement (optional)
+      description: A short public statement to accompany your position.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact for verification
+      description: Email or phone. Will not be published. Used to verify the pledge before it goes live.
+    validations:
+      required: true

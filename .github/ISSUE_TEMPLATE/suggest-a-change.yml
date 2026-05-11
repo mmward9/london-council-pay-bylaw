@@ -1,0 +1,42 @@
+name: Suggest a change to the bylaw
+description: Propose a change to the bylaw text or to a policy parameter.
+title: "[suggestion] "
+labels:
+  - suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you'd rather not use GitHub directly, the same form is available
+        on [ward9.online/bylaw](https://ward9.online/bylaw). Either path
+        reaches the same place.
+  - type: dropdown
+    id: section
+    attributes:
+      label: Which part of the bylaw?
+      options:
+        - Section 1 - Definitions
+        - Section 2 - Base pay
+        - Section 3 - Annual adjustment formula
+        - Section 4 - Floor
+        - Section 5 - No exception
+        - Section 6 - Reporting
+        - Section 7 - Inflation reference
+        - Section 8 - Pilot statement
+        - General / structural
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion
+      description: What would you change, and why? Keep it focused.
+      placeholder: I think the asymmetry ratio should be...
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source (optional)
+      description: If your suggestion is based on a fact or a comparable city's bylaw, link it.

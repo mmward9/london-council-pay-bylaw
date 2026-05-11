@@ -1,0 +1,6 @@
+# Candidate pledge tracker for the London Council Pay Accountability Bylaw.
+#
+# Each entry records a publicly verifiable position. See pledges/README.md
+# for the schema and verification process.
+
+candidates: []

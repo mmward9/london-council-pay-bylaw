@@ -1,0 +1,71 @@
+# The policy parameters of the London Council Pay Accountability Bylaw.
+#
+# Every entry in this file is a single, decisive policy lever. Almost all
+# substantive proposed changes to the bylaw should be a pull request to
+# this file alone. The bylaw prose in `bylaw/*.md` references these values
+# via Jinja templates and recomputes on every render.
+#
+# If you're suggesting a change and you don't know what to edit, edit this.
+
+policy:
+  base_pay:
+    # In Canadian dollars per year. These figures come from the City of London
+    # 2026 Candidate Information Session materials (slide 38).
+    councillor_cad: 94222
+    deputy_mayor_cad: 101000
+    budget_chair_cad: 101000
+    mayor_cad: 168908
+    source: "City of London 2026 Candidate Information Session, slide 38"
+
+  asymmetry:
+    # The core formula.
+    #
+    # If the City's operating property-tax levy rises by X% in a year, the pay
+    # of every office to which this bylaw applies is cut by:
+    pay_cut_per_levy_rise_percent: 1.0   # 1:1 — each 1% tax hike triggers a 1% pay cut
+
+    # If the levy is unchanged, pay adjusts by:
+    flat_levy_pay_adjustment: "cpi"      # match inflation (see inflation_reference below)
+
+    # If the levy is cut, pay adjusts by:
+    levy_cut_pay_adjustment: "cpi_plus_1" # CPI plus 1 percentage point
+
+  baseline_ratchet: true
+    # If true, a pay cut becomes the new baseline for all future calculations.
+    # Pay cannot recover automatically; council can only avoid further cuts.
+    # This is the discipline of the policy.
+
+  floor_percent_of_base: 50
+    # Pay shall not fall below this percentage of the original base pay.
+    # 50% of the councillor base of CAD 94,222 is roughly CAD 47,100.
+    # Keeps the role accessible to non-wealthy candidates.
+
+  inflation_reference:
+    source: "Statistics Canada Consumer Price Index"
+    geographic_area: "London Census Metropolitan Area (CMA)"
+    series: "All-Items"
+    method: "annual average for the prior calendar year"
+
+  exceptions:
+    # Intentionally none. No emergency carve-out for pandemics, court orders,
+    # or provincial downloads. See dissent/002-too-rigid-for-emergencies.md
+    # for the strongest argument against this choice and the response.
+    enabled: false
+
+  applies_to:
+    - councillor
+    - deputy_mayor
+    - budget_chair
+    - mayor
+
+implementation:
+  effective_date_descriptor: "the first fiscal year following the bylaw's enactment"
+  reporting:
+    annual_treasurer_report: true
+    alongside_municipal_act_s284_statement: true
+    publication_requirement: "alongside the annual remuneration statement"
+
+meta:
+  version: "0.1-draft"
+  status: "draft, public consultation"
+  last_substantive_review: "2026-05-11"
