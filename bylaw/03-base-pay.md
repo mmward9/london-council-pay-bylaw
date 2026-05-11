@@ -15,4 +15,4 @@
 | Budget Chair | {{ policy.base_pay.budget_chair_cad | currency }} |
 | Mayor | {{ policy.base_pay.mayor_cad | currency }} |
 
-(c) These figures correspond to the lawful remuneration in force at the start of the council term commencing November 17, 2026. Source: {{ policy.base_pay.source }}.
+(c) These figures correspond to the lawful remuneration in force at the start of the council term commencing November 17, 2026. {{ policy.base_pay.source }}.

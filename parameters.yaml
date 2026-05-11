@@ -15,7 +15,7 @@ policy:
     deputy_mayor_cad: 101000
     budget_chair_cad: 101000
     mayor_cad: 168908
-    source: "City of London 2026 Candidate Information Session, slide 38"
+    source: "[Source (Slide 38)](https://london.ca/sites/default/files/2026-04/Candidate%20Information%20Session%20presentation.pdf)"
 
   asymmetry:
     # The core formula.
