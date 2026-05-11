@@ -11,8 +11,8 @@
 | Office | Base pay (CAD per year) |
 |---|---|
 | Councillor | {{ policy.base_pay.councillor_cad | currency }} |
-| Deputy Mayor | {{ policy.base_pay.deputy_mayor_cad | currency }} |
-| Budget Chair | {{ policy.base_pay.budget_chair_cad | currency }} |
 | Mayor | {{ policy.base_pay.mayor_cad | currency }} |
 
-(c) These figures correspond to the lawful remuneration in force at the start of the council term commencing November 17, 2026. {{ policy.base_pay.source }}.
+(c) The base pay for the Deputy Mayor and the Budget Chair is the Councillor base pay set out in clause 2(b) plus any additional remuneration lawfully prescribed by Council for those positions.
+
+(d) The figures in clause 2(b) correspond to the lawful remuneration in force at the start of the council term commencing November 17, 2026. {{ policy.base_pay.source }}.

@@ -50,11 +50,11 @@ In this bylaw:
 | Office | Base pay (CAD per year) |
 |---|---|
 | Councillor | $94,222 |
-| Deputy Mayor | $101,000 |
-| Budget Chair | $101,000 |
 | Mayor | $168,908 |
 
-(c) These figures correspond to the lawful remuneration in force at the start of the council term commencing November 17, 2026. [Source (Slide 38)](https://london.ca/sites/default/files/2026-04/Candidate%20Information%20Session%20presentation.pdf).
+(c) The base pay for the Deputy Mayor and the Budget Chair is the Councillor base pay set out in clause 2(b) plus any additional remuneration lawfully prescribed by Council for those positions.
+
+(d) The figures in clause 2(b) correspond to the lawful remuneration in force at the start of the council term commencing November 17, 2026. [Source (Slide 38)](https://london.ca/sites/default/files/2026-04/Candidate%20Information%20Session%20presentation.pdf).
 
 
 ## 3. Annual adjustment

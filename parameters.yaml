@@ -9,11 +9,14 @@
 
 policy:
   base_pay:
-    # In Canadian dollars per year. These figures come from the City of London
-    # 2026 Candidate Information Session materials (slide 38).
+    # In Canadian dollars per year. These figures come from the City of
+    # London 2026 Candidate Information Session presentation, slide 38.
+    # Only Councillor and Mayor are specified, because slide 38 only
+    # publishes those two figures. Deputy Mayor and Budget Chair base
+    # pay is defined by reference in the bylaw itself (clause 2(c)) as
+    # Councillor base pay plus the additional remuneration lawfully
+    # prescribed by Council for those positions.
     councillor_cad: 94222
-    deputy_mayor_cad: 101000
-    budget_chair_cad: 101000
     mayor_cad: 168908
     source: "[Source (Slide 38)](https://london.ca/sites/default/files/2026-04/Candidate%20Information%20Session%20presentation.pdf)"
 
