@@ -1,5 +1,7 @@
 # A BYLAW TO TIE THE REMUNERATION OF THE COUNCIL OF THE CITY OF LONDON TO THE ANNUAL OPERATING PROPERTY-TAX LEVY
 
+**Short title:** This bylaw may be cited as the *Pay Accountable to City Taxpayers Bylaw* or the *PACT Bylaw*.
+
 **Status:** draft, public consultation | Version: 0.1-draft | Last substantive review: 2026-05-11
 
 ---

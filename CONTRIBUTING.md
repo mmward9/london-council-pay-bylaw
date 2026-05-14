@@ -1,4 +1,4 @@
-# Contributing to the London Council Pay Accountability Bylaw
+# Contributing to the Pay Accountable to City Taxpayers (PACT) Bylaw
 
 Most people should use the **"Suggest a change"** button on
 [ward9.online/bylaw](https://ward9.online/bylaw). It does not require a

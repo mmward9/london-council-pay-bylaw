@@ -1,4 +1,4 @@
-# The London Council Pay Accountability Bylaw
+# The Pay Accountable to City Taxpayers (PACT) Bylaw
 
 A proposed bylaw for the City of London, Ontario, drafted in public.
 

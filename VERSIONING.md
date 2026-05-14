@@ -1,6 +1,6 @@
 # Versioning policy
 
-The Council Pay Accountability Bylaw is a public document under active drafting. Candidates who pledge to support it on [ward9.online/pledge/](https://ward9.online/pledge/) pin their pledge to a specific version. This file is the editorial rulebook for what causes the version number to change.
+The Pay Accountable to City Taxpayers (PACT) Bylaw is a public document under active drafting. Candidates who pledge to support it on [ward9.online/pledge/](https://ward9.online/pledge/) pin their pledge to a specific version. This file is the editorial rulebook for what causes the version number to change.
 
 The version line appears at the top of [`rendered/BYLAW.md`](rendered/BYLAW.md) in the form:
 
