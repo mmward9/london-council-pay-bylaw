@@ -1,6 +1,6 @@
-# Pay Accountable to City Taxpayers (PACT) Bylaw
+# {{ metadata.campaign_brand }}
 
-**Status:** draft, public consultation | Version: 1.0-draft | Last substantive review: 2026-05-22
+**Status:** {{ metadata.status }} | Version: {{ metadata.version }} | Last substantive review: {{ metadata.last_substantive_review }}
 
 ---
 

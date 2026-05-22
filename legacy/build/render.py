@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Render the PACT Bylaw from source materials.
+Render the bylaw from source materials.
 
 Reads:
-  parameters.yaml          metadata + verified primary-source references
-  bylaw/*.md               operative bylaw text (Jinja templates) in filename order
+  parameters.yaml          policy parameters
+  bylaw/*.md               prose sections (Jinja templates) in filename order
 
 Writes:
   rendered/BYLAW.md        canonical rendered bylaw
@@ -12,17 +12,25 @@ Writes:
 Usage:
   python build/render.py            # renders to rendered/
   python build/render.py --check    # exits non-zero if rendered/ is stale
-
-Notes:
-  Under the v12 amending-by-law approach, the operative text lives in a
-  single file at bylaw/01-amending-bylaw.md. The multi-file glob loop is
-  retained so that additional auxiliary sections can be added later
-  without restructuring the renderer.
 """
 from pathlib import Path
 import sys
 import yaml
 from jinja2 import Environment, BaseLoader, StrictUndefined
+
+
+def currency(amount):
+    """$94,222"""
+    if amount is None:
+        return "$0"
+    return "${:,.0f}".format(amount)
+
+
+def percent(value):
+    """1.0%"""
+    if value is None:
+        return "0%"
+    return "{:g}%".format(value)
 
 
 def render_bylaw(repo_root: Path) -> str:
@@ -48,6 +56,8 @@ def render_bylaw(repo_root: Path) -> str:
         lstrip_blocks=False,
         keep_trailing_newline=True,
     )
+    env.filters["currency"] = currency
+    env.filters["percent"] = percent
 
     pieces = []
     for f in section_files:
@@ -59,12 +69,33 @@ def render_bylaw(repo_root: Path) -> str:
     return "\n\n".join(pieces).rstrip() + "\n"
 
 
+def render_examples(repo_root: Path) -> dict:
+    """Render any Jinja templates in examples/ to the same path with extension preserved."""
+    examples_dir = repo_root / "examples"
+    if not examples_dir.exists():
+        return {}
+    with (repo_root / "parameters.yaml").open() as f:
+        params = yaml.safe_load(f)
+    env = Environment(
+        loader=BaseLoader(),
+        undefined=StrictUndefined,
+        keep_trailing_newline=True,
+    )
+    env.filters["currency"] = currency
+    env.filters["percent"] = percent
+    out = {}
+    for f in sorted(examples_dir.glob("*.md")):
+        out[f.name] = env.from_string(f.read_text()).render(**params)
+    return out
+
+
 def main():
     repo_root = Path(__file__).resolve().parent.parent
     rendered_dir = repo_root / "rendered"
     rendered_dir.mkdir(exist_ok=True)
 
     bylaw_md = render_bylaw(repo_root)
+    examples = render_examples(repo_root)
 
     check_mode = "--check" in sys.argv
 
@@ -74,11 +105,23 @@ def main():
         if existing != bylaw_md:
             print(f"STALE: {bylaw_out}", file=sys.stderr)
             sys.exit(1)
-        print("rendered/BYLAW.md is in sync with sources.")
+        for name, body in examples.items():
+            ex_out = rendered_dir / "examples" / name
+            ex_existing = ex_out.read_text() if ex_out.exists() else ""
+            if ex_existing != body:
+                print(f"STALE: {ex_out}", file=sys.stderr)
+                sys.exit(1)
+        print("rendered/ is in sync with sources.")
         return
 
     bylaw_out.write_text(bylaw_md)
     print(f"Wrote {bylaw_out}")
+
+    (rendered_dir / "examples").mkdir(exist_ok=True)
+    for name, body in examples.items():
+        out = rendered_dir / "examples" / name
+        out.write_text(body)
+        print(f"Wrote {out}")
 
 
 if __name__ == "__main__":
