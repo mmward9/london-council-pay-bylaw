@@ -15,8 +15,8 @@
 
 metadata:
   status: "draft, public consultation"
-  version: "2.2-draft"
-  last_substantive_review: "2026-05-23"
+  version: "2.3-draft"
+  last_substantive_review: "2026-06-10"
   campaign_brand: "Pay Accountable to City Taxpayers (PACT) Bylaw"
 
 # Primary source references used by the operative bylaw text. All retrieved
@@ -39,9 +39,13 @@ sources:
       s5_3: "Powers of a municipality exercised by by-law"
       s8_1: "Broad interpretation of municipal powers"
       s8_2: "Ambiguity resolved in favour of inclusion"
-      s11_2_p1: "By-laws respecting governance structure"
-      s11_2_p3: "By-laws respecting financial management"
-      s283: "Remuneration provisions, including subsection (4) (remuneration is not deemed expenses)"
+      s10_2_p1: "By-laws respecting governance structure (s. 10(2) is the single-tier grant; London is a single-tier municipality)"
+      s10_2_p2: "By-laws respecting accountability and transparency"
+      s10_2_p3: "By-laws respecting financial management"
+      s283_4: "Remuneration is not deemed expenses (s. 283(4)). Note: s. 283(1) addresses local-board remuneration; council remuneration authority rests on the s. 10(2) spheres"
+      s285: "Fiscal year of a municipality is January 1 to December 31"
+      s290: "Yearly budget of a local municipality; the budget decides the general local municipality levy"
+      s312_1: "Definition of general local municipality levy; the levy measure anchor for s. 4.3(a)(ii)"
       s284_11: "Head-of-council veto framework; two-thirds council override per s. 284.11(9)"
       s312_2: "Annual rating by-law authority"
 
@@ -73,6 +77,7 @@ sources:
 bylaw_effective_date_note: |
   Effective the day of passage. First annual adjustment under the levy-linked
   clause applies on the first January 1 occurring after the by-law comes
-  into force, using the total municipal tax levy from the annual rating
-  by-law for the fiscal year that began before that January 1, compared
-  to the total municipal tax levy for the immediately preceding fiscal year.
+  into force, using the total municipal tax levy (the general local
+  municipality levy decided in the City's budget, Municipal Act s. 312(1))
+  net of the Treasurer-published assessment growth amount, compared to the
+  total municipal tax levy for the immediately preceding fiscal year.

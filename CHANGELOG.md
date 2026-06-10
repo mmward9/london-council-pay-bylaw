@@ -2,6 +2,23 @@
 
 All notable changes to the Pay Accountable to City Taxpayers (PACT) Bylaw are recorded here. Each entry corresponds to a version line in `rendered/BYLAW.md`. Version-bump rules are documented in `VERSIONING.md`.
 
+## 2.3-draft — 2026-06-10 — Levy measure anchored to the statutory levy definition, net of assessment growth; single-tier citation fix
+
+**MINOR bump (2.2-draft → 2.3-draft).** Per `VERSIONING.md`, adjusting the reduction formula's input and adding an operationally-referenced definition are MINOR-bump changes. Pledges pinned to 2.2-draft are flagged on the public scoreboard as "pledged against an earlier version"; candidates can re-pledge through the OTP flow.
+
+**Why the change.** The City of London publishes two levy-increase figures every budget cycle: the total tax levy increase, and the "Tax Levy % Increase from Rates," which the City's own budget tables footnote as "adjusts for change in total levy due to assessment growth." The from-rates line is the number everyone quotes (8.7% for 2024, 7.3% for 2025); the total line was 10.4% and 8.5% in the same years, because growth in the assessment roll (chiefly new construction) adds levy dollars without raising anyone's tax bill. As drafted in 2.2, the levy change percentage measured the total line while every public explanation of PACT used the from-rates line, and the exclusion intended to remove assessment-value effects operated only "to the extent separately identified in the annual rating by-law," which London's rating by-law does not do (it publishes tax rates by property class, not dollar amounts). Net effect: the decrement would have accrued roughly 1.2 to 1.7 percentage points per year faster than the published examples implied, and council would have been docked pay for new homes joining the tax roll. That contradicts the design intent. PACT responds to the tax increase existing taxpayers actually bear.
+
+**Operative changes a pledger would notice side-by-side:**
+
+- 4.3(a)(ii) "total municipal tax levy" is re-anchored to the statutory defined term: the *general local municipality levy* under *Municipal Act, 2001* s. 312(1) ("the amount the local municipality decided to raise in its budget for the year under section 290 on all rateable property"). Education amounts and special local municipality levies sit outside that term by definition; the Treasurer-determination fallback is retained.
+- New 4.3(a)(vii) defines "assessment growth amount": the portion of the year-over-year levy change attributable to changes in the assessment roll (new construction, additions, improvements, expansions, supplementary assessments) as determined by the City Treasurer and published in the City's annual budget documents; deemed zero if no determination is published.
+- 4.3(a)(iii) "levy change percentage" is now computed net of the assessment growth amount and is intended to correspond to the City's published "tax levy increase from rates." A levy increase wholly attributable to assessment growth produces a levy change percentage of zero.
+- 4.3(e)(i) and 4.3(e)(iii): the Treasurer also calculates and publishes the assessment growth amount used.
+- 4.3(f) cross-references the 4.3(a)(iii) definition instead of restating the formula without the netting.
+- Preamble citation corrected from subsection 11(2) (the lower-tier and upper-tier grant) to subsection 10(2) (the single-tier grant; London is a single-tier municipality), now citing paragraphs 1, 2 and 3 so each recited matter maps to a cited paragraph. The matter lists of the two subsections are identical; the authority is unchanged. On its own this would have been an editorial/patch change; it ships with the MINOR bump.
+
+**Sources for the levy figures:** City of London 2025 Annual Budget Update ("Tax Levy % Increase" vs "Tax Levy % Increase from Rates," Note 1); City of London 2025 Tax Rates schedule (rates by property class only). Statutory text verified against the e-Laws consolidated *Municipal Act, 2001* (ss. 10(2), 11(2), 283, 285, 290, 312).
+
 ## 2.2-draft — 2026-05-23 — Architectural pivot: parallel persistent ledger applied multiplicatively (v13 series)
 
 **MAJOR bump (1.0-draft → 2.2-draft).** Per `VERSIONING.md`, this is a MAJOR bump because v13 *removes and replaces the persistence-of-reduction rule* by changing the fundamental mechanism from a section 4.2 modifier (v12) to a parallel persistent ledger (v13). All pledges to the 1.0-draft version are automatically flagged on the public scoreboard as "pledged against an earlier version" and candidates can re-pledge through the OTP flow.
