@@ -10,6 +10,18 @@ deep_research_companion: PACT Bylaw Refactor Proposal v12 — Comprehensive Audi
 
 # PACT Bylaw — Solicitor / Treasurer Handoff (rev. 2)
 
+> **STATUS NOTE (2026-07-09, unedited rev. 2 below).** This memo was written against the v12 draft and is retained as the item-checklist skeleton. Read it with these corrections before any handoff:
+>
+> 1. **Architecture.** The current draft is the v13 series (2.4-draft): a parallel accumulated decrement applied multiplicatively at the final-payable step (new Policy s. 4.5). It does not modify the s. 4.2 annual adjustment and does not produce a negative s. 4.2 adjustment, so Item 1's "negative annual adjustment" and "notwithstanding s. 4.2(a)/(b)" questions apply to v12 only.
+> 2. **Statutory citations.** s. 11(2) was corrected to s. 10(2) paragraphs 1, 2 and 3 (single-tier grant) in 2.3-draft; 2.4-draft also recites s. 9 (natural person powers). s. 283 was verified 2026-07-09 from the consolidated Act: s. 283(1) covers local-board remuneration only, so no remuneration-specific council provision competes with the broad-powers chain.
+> 3. **Section numbering.** Item 5(f)'s predicted collision occurred: the City amended the Policy on June 23, 2026 (By-law No. CPOL.-70(c)-189), codifying resolution 2025-C06 parts (d) and (h) as Policy ss. 4.3 and 4.4. PACT now enacts as s. 4.5; confirm numbering against the then-current Policy at introduction.
+> 4. **Item 4 (Mayor coverage)** is closed in 2.4-draft by the new definition 4.5(a)(viii) ("elected official" means the Mayor and every member of Council). The belt-and-suspenders confirmation remains available but is no longer load-bearing.
+> 5. **MCOIA s. 4** (exemption from ss. 5, 5.2, 5.3) is now recited in the by-law preamble.
+>
+> A rev. 3 rewrite against 2.4-draft is queued for the post-election cycle. Sources for the corrections: `CHANGELOG.md` (2.3-draft, 2.4-draft entries) and the 2026-07-09 verification pass referenced there.
+
+
+
 This memo identifies the items that must be closed before the Pay Accountable to City Taxpayers (PACT) amending by-law can be introduced at Council. The proposal is fully drafted at `Campaign/research/pact-refactor-proposal-2026-05-21-v12.md`. The amending by-law adds a single new section 4.3 to existing By-law CPOL.-70(b)-220 (Remuneration for Elected Officials and Appointed Citizen Members Policy).
 
 Each item below identifies:
