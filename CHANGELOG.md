@@ -2,6 +2,29 @@
 
 All notable changes to the Pay Accountable to City Taxpayers (PACT) Bylaw are recorded here. Each entry corresponds to a version line in `rendered/BYLAW.md`. Version-bump rules are documented in `VERSIONING.md`.
 
+## 2.4-draft — 2026-07-09 — Live-Policy collision fix: PACT section renumbered 4.3 → 4.5; recitals hardened
+
+**MINOR bump (2.3-draft → 2.4-draft).** Per `VERSIONING.md`, renumbering the operative section against the live Policy, adding operationally-referenced definitions, and adding an overpayment-recovery mechanism are substantive-but-bounded changes. Pledges pinned to 2.3-draft are flagged on the public scoreboard; candidates can re-pledge through the OTP flow.
+
+**Why the change.** On June 23, 2026 the City amended the Remuneration for Elected Officials and Appointed Citizen Members Policy (By-law No. CPOL.-70(c)-189; live policy page retrieved and verified 2026-07-09). The amendment codifies Council resolution 2025-C06 parts (d) and (h) into the Policy itself as two new sections: s. 4.3 (Councillor base compensation updated in 2027 from 2021-2026 Census data, effective for 2028, at the 70th percentile of full-time individual employment income in the London CMA) and s. 4.4 (Deputy Mayor and Budget Chair additional compensation at 8% of Councillor base). PACT had been drafted as "a new section 4.3" since the v12 pivot, when the Policy's section 4 ended at 4.2 — the 2026-06-10 fact-check flagged exactly this collision risk ("re-verify numbering at introduction"). The collision is now live, so the published draft renumbers now rather than waiting for introduction, because pledges pin to the published text.
+
+**Operative changes a pledger would notice side-by-side:**
+
+- The PACT section is now **s. 4.5** (was s. 4.3). All internal references updated. A drafting note commits to re-confirming the number against the then-current Policy at introduction.
+- The Policy is now recited with its full legislative history through CPOL.-70(c)-189 and defined as "the Policy"; operative text refers to the Policy by that defined term instead of the stale designation "CPOL.-70(b)-220".
+- Step (i) of the application clause (now 4.5(c)(i)) explicitly computes remuneration under **sections 4.2, 4.3 and 4.4** of the Policy before the decrement is applied, so the City's census re-peg and the DM/BC stipends feed the calculation and the decrement applies on top.
+- The persistence clause (now 4.5(d)) names **Policy s. 4.3** alongside resolution 2025-C06 clause (d) as a re-peg event the decrement survives.
+- The Remuneration definition (4.5(a)(v)) cites **Policy s. 4.4** for the Deputy Mayor / Budget Chair additional compensation.
+- New definition **4.5(a)(viii) "Elected official"**: the Mayor and every member of Council. Closes the Mayor-coverage-by-implication gap flagged in prior audits (Policy s. 2.1 defines nothing; s. 3.1 applicability says "elected officials" without enumeration).
+- **Assessment growth determination** (4.5(a)(vii)) is now anchored to "the methodology used in the City's annual budget documents for reporting the tax levy increase from rates" — forecloses methodology drift in either direction. The deemed-zero default when no determination is published is retained (taxpayer-conservative; the realistic manipulation vector is overstatement, which the methodology anchor addresses).
+- **Overpayment recovery**: 4.5(e)(v) now expressly authorizes recovery "by deduction from one or more subsequent remuneration payments to the affected elected official or as a debt due to the City". (Elected officials sit outside the ESA — s. 3(5) para 7, "A holder of political, religious or judicial office" — verified from the consolidated Act 2026-07-09; the express authority removes any payroll-policy objection.)
+- **Automatic administration**: new closing sentence in 4.5(e) — the Treasurer duties "are automatic and self-executing... and do not require further direction or authorization of Council in any fiscal year" — mirrors resolution 2025-C06 part (c) and moots the administration-authority question.
+- **New recitals**: (1) statutory authority now also cites *Municipal Act* s. 9 (natural person powers); (2) a design recital states the one-way, cross-term operation of the decrement in the legislative record; (3) an MCOIA recital cites the s. 4 exemption (ss. 5, 5.2, 5.3 do not apply to remuneration matters) so the every-member-may-vote point is on the face of the by-law.
+
+**What stays unchanged:** the accumulated-decrement mechanism itself (additive accumulation in percentage points, multiplicative application, zero floor, no upper cap), the levy measure (s. 312(1) general local municipality levy net of assessment growth), the Treasurer timing/backstop architecture (4.5(e)(iv)-(v)), first-year mechanics, rounding, and the no-cap / only-ever-cuts design directives.
+
+**Audit trail for this version:** independent verification pass 2026-07-09 (Fable) against the consolidated *Municipal Act, 2001*, the MCOIA, the ESA, the live london.ca policy page, and the 2025-C06 vote record, triggered by an external Sonnet 5.0 audit; the verification corrected that audit's two central legal claims (s. 283 contains no council-remuneration authority to "return" to — s. 283(1) is local boards only; and section 4 of the Policy now DOES contain base-compensation provisions, so the priority clause's base-compensation scope must stay). Report: `Campaign/research/PACT-audit-fable-2026-07-09.md` in the campaign repo.
+
 ## 2.3-draft — 2026-06-10 — Levy measure anchored to the statutory levy definition, net of assessment growth; single-tier citation fix
 
 **MINOR bump (2.2-draft → 2.3-draft).** Per `VERSIONING.md`, adjusting the reduction formula's input and adding an operationally-referenced definition are MINOR-bump changes. Pledges pinned to 2.2-draft are flagged on the public scoreboard as "pledged against an earlier version"; candidates can re-pledge through the OTP flow.

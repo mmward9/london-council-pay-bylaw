@@ -1,7 +1,9 @@
 # PACT Bylaw — parameters.
 #
 # Under the v12 amending-by-law approach, the PACT Bylaw adds a single new
-# section 4.3 to existing City of London By-law CPOL.-70(b)-220
+# section 4.5 to the existing City of London Remuneration for Elected
+# Officials and Appointed Citizen Members Policy (CPOL.-70-302 as amended,
+# most recently by CPOL.-70(c)-189, June 23 2026)
 # (Remuneration for Elected Officials and Appointed Citizen Members Policy).
 # The operative compensation parameters — base pay, annual indexing formula,
 # zero floor, wage-freeze pause, recurring base reset — are ALL set by the
@@ -15,8 +17,8 @@
 
 metadata:
   status: "draft, public consultation"
-  version: "2.3-draft"
-  last_substantive_review: "2026-06-10"
+  version: "2.4-draft"
+  last_substantive_review: "2026-07-09"
   campaign_brand: "Pay Accountable to City Taxpayers (PACT) Bylaw"
 
 # Primary source references used by the operative bylaw text. All retrieved
@@ -31,6 +33,7 @@ sources:
       adopted: "2017-08-22 (By-law No. CPOL.-70-302)"
       amended_2018: "2018-07-24 (By-law No. CPOL.-70(a)-408)"
       amended_2023: "2023-07-25 (By-law No. CPOL.-70(b)-220)"
+      amended_2026: "2026-06-23 (By-law No. CPOL.-70(c)-189) — codifies resolution 2025-C06 parts (d) and (h) as Policy ss. 4.3 (2027-28 Councillor base update) and 4.4 (Deputy Mayor / Budget Chair 8% additional compensation). PACT therefore enacts as s. 4.5; verified against the live policy page 2026-07-09."
 
   municipal_act_2001:
     citation: "Municipal Act, 2001, S.O. 2001, c. 25"
@@ -38,14 +41,15 @@ sources:
     sections_relied_on:
       s5_3: "Powers of a municipality exercised by by-law"
       s8_1: "Broad interpretation of municipal powers"
-      s8_2: "Ambiguity resolved in favour of inclusion"
+      s8_2: "Ambiguity resolved in favour of inclusion (of powers held before 2003, when council remuneration authority was express)"
+      s9: "Natural person powers (paying remuneration is a natural-person act, exercised by by-law per s. 5(3))"
       s10_2_p1: "By-laws respecting governance structure (s. 10(2) is the single-tier grant; London is a single-tier municipality)"
       s10_2_p2: "By-laws respecting accountability and transparency"
       s10_2_p3: "By-laws respecting financial management"
       s283_4: "Remuneration is not deemed expenses (s. 283(4)). Note: s. 283(1) addresses local-board remuneration; council remuneration authority rests on the s. 10(2) spheres"
       s285: "Fiscal year of a municipality is January 1 to December 31"
       s290: "Yearly budget of a local municipality; the budget decides the general local municipality levy"
-      s312_1: "Definition of general local municipality levy; the levy measure anchor for s. 4.3(a)(ii)"
+      s312_1: "Definition of general local municipality levy; the levy measure anchor for s. 4.5(a)(ii)"
       s284_11: "Head-of-council veto framework; two-thirds council override per s. 284.11(9)"
       s312_2: "Annual rating by-law authority"
 
@@ -73,7 +77,8 @@ sources:
     agenda_with_statcan_percentile_data: "https://pub-london.escribemeetings.com/FileStream.ashx?DocumentId=118803"
 
 # Effective date note for the renderer. The operative bylaw text already
-# specifies effective date and first-applicable-year behaviour in clause 1(d).
+# specifies effective date (enacting clause 3) and first-applicable-year
+# behaviour (s. 4.5(f)).
 bylaw_effective_date_note: |
   Effective the day of passage. First annual adjustment under the levy-linked
   clause applies on the first January 1 occurring after the by-law comes
