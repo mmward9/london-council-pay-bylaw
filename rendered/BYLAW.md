@@ -1,6 +1,6 @@
 # Pay Accountable to City Taxpayers (PACT) Bylaw
 
-**Status:** draft, public consultation | Version: 2.4-draft | Last substantive review: 2026-07-09
+**Status:** draft, public consultation | Version: 2.5-draft | Last substantive review: 2026-09-09
 
 ---
 
@@ -11,6 +11,8 @@
 > The v13 series is a fundamental architectural change from the v12 single-clause modifier of section 4.2. v13 introduces a **parallel persistent ledger** called the *accumulated decrement*, applied multiplicatively on top of whatever section 4.2 indexing, the section 4.3 base-compensation update, and any future base re-pegs produce. The decrement persists across all base-setting events including the update codified in Policy section 4.3 (resolution 2025-C06 Part (d)). Levy decreases erode the decrement (floored at zero; no pay increase ever generated). There is no upper cap on the decrement.
 >
 > The 2.3-draft revision anchored the levy measure to the statutory defined term for the City's levy (the *general local municipality levy*, *Municipal Act, 2001* subsection 312(1)) net of Treasurer-published assessment growth, so the change PACT measures corresponds to the "tax levy increase from rates" the City already publishes in its annual budget documents. Details in [`CHANGELOG.md`](https://github.com/mmward9/london-council-pay-bylaw/blob/main/CHANGELOG.md).
+>
+> **The 2.5-draft revision adds a CPI-indexed period starting in the fifth fiscal year of application.** For the first four fiscal years this section is in force (a full council term), the mechanism is unchanged from 2.4-draft: any positive levy-from-rates increase, however small, adds fully to the decrement. From the fifth fiscal year onward, only the portion of a levy-from-rates increase that exceeds the annual change in the Consumer Price Index for the London CMA adds to the decrement; a levy-from-rates increase at or below CPI has no effect either way, and an actual levy-from-rates decrease still erodes the decrement exactly as before. This does not soften the first-term freeze at all. It changes only what happens after it, so the bylaw does not permanently require real per-capita city revenue to shrink in order for council to keep full pay. Details in [`CHANGELOG.md`](https://github.com/mmward9/london-council-pay-bylaw/blob/main/CHANGELOG.md).
 >
 > Full audit trail, including the Perplexity Pro Deep Research audit on v13, the v13.1 delta-review, the v13.2 confirmation review (all completed 2026-05-23), and the 2026-07-09 independent verification pass, is in [`docs/`](https://github.com/mmward9/london-council-pay-bylaw/tree/main/docs).
 
@@ -60,13 +62,33 @@
 
 **(viii) "Elected official"** means the Mayor of the City of London and every member of the Council of the City of London.
 
+**(ix) "Consumer Price Index" or "CPI"** means the Statistics Canada Consumer Price Index for the London, Ontario Census Metropolitan Area, All-Items series, not seasonally adjusted. If Statistics Canada ceases to publish that series, or substantially changes its methodology such that it is no longer reasonably comparable to the series as published at the time this clause is enacted, the City Treasurer shall, until Council designates a comparable successor measure by a subsequent by-law, use the All-Items Consumer Price Index for Ontario as published by Statistics Canada in its place, and shall note the substitution in the publication required under subsection (e).
+
+**(x) "CPI percentage"** for a fiscal year means the percentage change in the CPI, calculated as the annual average of the CPI for the calendar year immediately preceding that fiscal year compared to the annual average of the CPI for the calendar year immediately preceding that one, expressed as a percentage and rounded to two decimal places. Where the CPI percentage for a fiscal year cannot be determined by the time of the calculation required under subsection (e), the CPI percentage for that fiscal year shall be deemed to be zero.
+
+**(xi) "Freeze fiscal year"** means each of the first four fiscal years to which this section applies, beginning with the first fiscal year referred to in subsection (f).
+
+**(xii) "Applicable levy change percentage"** for a fiscal year means:
+
+(A) for a freeze fiscal year, the levy change percentage for that fiscal year as determined under clause (a)(iii); and
+
+(B) for any fiscal year that is not a freeze fiscal year:
+
+  (1) if the levy change percentage for that fiscal year is less than zero, the levy change percentage for that fiscal year;
+
+  (2) if the levy change percentage for that fiscal year is zero, or is greater than zero but does not exceed the CPI percentage for that fiscal year, zero; and
+
+  (3) if the levy change percentage for that fiscal year exceeds the CPI percentage for that fiscal year, the amount by which the levy change percentage exceeds the CPI percentage for that fiscal year.
+
+For greater certainty, this clause does not alter the levy change percentage as determined under clause (a)(iii) for any purpose other than the calculation of the accumulated decrement under subsection (b). The levy change percentage as determined under clause (a)(iii), without adjustment under this clause, continues to be the figure published under subsection (e) and continues to be the figure intended to correspond to the tax levy increase from rates as published in the City's annual budget documents.
+
 **4.5(b) Annual update of the accumulated decrement.** For each fiscal year in which this section is in force, the accumulated decrement shall be updated as follows:
 
 Updated accumulated decrement (in percentage points) = the greater of:
 
 (i) zero, and
 
-(ii) the previous fiscal year's accumulated decrement plus the levy change percentage for the current fiscal year.
+(ii) the previous fiscal year's accumulated decrement plus the applicable levy change percentage for the current fiscal year, as determined under clause (a)(xii).
 
 The accumulated decrement shall not be less than zero in any fiscal year. There is no upper bound on the accumulated decrement.
 
@@ -82,11 +104,11 @@ The resulting amount is the final remuneration payable for that fiscal year. For
 
 **4.5(e) Calculation and publication by Treasurer.** The City Treasurer shall:
 
-(i) calculate the levy change percentage, the assessment growth amount, and the accumulated decrement for each fiscal year in which this section is in force,
+(i) calculate the levy change percentage, the assessment growth amount, the CPI percentage, the applicable levy change percentage, and the accumulated decrement for each fiscal year in which this section is in force,
 
 (ii) maintain a record of these values in the records of the office of the City Clerk,
 
-(iii) include the current fiscal year's levy change percentage, the assessment growth amount used in that calculation, the accumulated decrement, and the final remuneration payable for the Mayor and Councillors in the City's published annual budget documents and in any annual remuneration disclosure required by law,
+(iii) include the current fiscal year's levy change percentage, the assessment growth amount used in that calculation, whether that fiscal year is a freeze fiscal year, the CPI percentage, the applicable levy change percentage, the accumulated decrement, and the final remuneration payable for the Mayor and Councillors in the City's published annual budget documents and in any annual remuneration disclosure required by law,
 
 (iv) where the annual rating by-law for a fiscal year has not been adopted before the first remuneration payment date in that fiscal year, use the previous fiscal year's accumulated decrement for interim remuneration calculations and reconcile any difference in the first remuneration payment following adoption of the annual rating by-law, and
 

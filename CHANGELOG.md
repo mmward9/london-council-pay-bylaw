@@ -2,6 +2,24 @@
 
 All notable changes to the Pay Accountable to City Taxpayers (PACT) Bylaw are recorded here. Each entry corresponds to a version line in `rendered/BYLAW.md`. Version-bump rules are documented in `VERSIONING.md`.
 
+## 2.5-draft — 2026-09-09 — First term stays an absolute freeze; the mechanism becomes CPI-indexed after that
+
+**MINOR bump** (per `VERSIONING.md`: "adjusting the threshold above which a remuneration reduction kicks in").
+
+Matt was checking the mechanics behind a supporter's question about how property tax bills are actually calculated (levy first, rate derived, a rate freeze and a levy freeze are not the same thing) and realized the current 2.4-draft mechanism has no floor for inflation at all: any positive levy-from-rates increase, even one that exactly matches the cost of inflation, adds fully and permanently to the decrement, with no distinction from a levy increase driven by genuine overspending. That's defensible as a temporary, deliberate freeze given the 8.7% / 7.3% / 3.4% run-up London has actually seen. It's harder to defend as the permanent design for every council after this one, since a council that merely keeps pace with inflation forever would still see its pay driven toward zero under the 2.4-draft text.
+
+**What changed:** the mechanism now has two phases.
+
+- **First four fiscal years of application (a full council term): unchanged.** Any positive levy-from-rates increase, however small, still adds fully to the decrement. This is the absolute freeze Matt is personally committed to for his own term regardless of what PACT does (see the campaign's separately-locked zero-tax-increase pledge), now reflected structurally in the bylaw for the term in which it first applies.
+- **Fifth fiscal year of application onward: CPI-indexed.** Only the portion of a levy-from-rates increase that exceeds the change in the Consumer Price Index for the London CMA (Statistics Canada, All-Items, annual average) adds to the decrement. A levy-from-rates increase at or below CPI has zero effect on the decrement, neither adding to it nor eroding it. An actual levy-from-rates decrease still erodes the decrement exactly as it always has, in either phase.
+
+New definitions added to s. 4.5(a): "Consumer Price Index" / "CPI" (ix), anchored to the same StatsCan London CMA All-Items series the original pre-v12 design used, with a successor-measure clause if Statistics Canada discontinues it; "CPI percentage" (x); "Freeze fiscal year" (xi), meaning the first four fiscal years this section applies; and "Applicable levy change percentage" (xii), the definition that actually feeds the decrement update in s. 4.5(b) and implements the two-phase logic above. The existing "levy change percentage" definition in (a)(iii) is untouched and continues to be the figure published to match the City's own "tax levy increase from rates" reporting; the new (a)(xii) definition only changes what portion of that figure counts toward the decrement, and only from the fifth fiscal year on. Treasurer calculation and publication duties in s. 4.5(e) extended to cover the two new figures and whether a fiscal year is a freeze fiscal year, for the same transparency standard the rest of the section already holds itself to.
+
+**What this does not change:** the freeze itself, for this coming term, is identical to 2.4-draft's mechanism, not weaker. Every levy increase London has actually had on record (8.7%, 7.3%, 3.4%) ran well above any plausible CPI figure, so nothing about this revision changes any of the campaign's existing worked examples or attack lines about the historical record. The decrement remains uncapped, remains multiplicative, and remains persistent across base-compensation re-pegs, exactly as in 2.4-draft; this revision does not touch ss. 4.5(b) through (i) except to swap "levy change percentage" for "applicable levy change percentage" in the one formula in (b) that actually computes the decrement, and to extend the (e) publication list.
+
+**Known follow-up, not yet done:** `dissent/001-incentive-to-cut-services.md` still describes the abandoned pre-v12 design (a flat CPI+1% cap on pay raises, a 50% floor) and does not reflect the current decrement mechanism at all, in either its 2.4-draft or 2.5-draft form. Needs a rewrite; tracked separately.
+
+
 ## 2.4-draft — 2026-07-09 — Live-Policy collision fix: PACT section renumbered 4.3 → 4.5; recitals hardened
 
 **MINOR bump (2.3-draft → 2.4-draft).** Per `VERSIONING.md`, renumbering the operative section against the live Policy, adding operationally-referenced definitions, and adding an overpayment-recovery mechanism are substantive-but-bounded changes. Pledges pinned to 2.3-draft are flagged on the public scoreboard; candidates can re-pledge through the OTP flow.
