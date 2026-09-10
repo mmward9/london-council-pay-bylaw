@@ -6,7 +6,7 @@ All notable changes to the Pay Accountable to City Taxpayers (PACT) Bylaw are re
 
 **MINOR bump** (per `VERSIONING.md`: "adjusting the threshold above which a remuneration reduction kicks in").
 
-Matt was checking the mechanics behind a supporter's question about how property tax bills are actually calculated (levy first, rate derived, a rate freeze and a levy freeze are not the same thing) and realized the current 2.4-draft mechanism has no floor for inflation at all: any positive levy-from-rates increase, even one that exactly matches the cost of inflation, adds fully and permanently to the decrement, with no distinction from a levy increase driven by genuine overspending. That's defensible as a temporary, deliberate freeze given the 8.7% / 7.3% / 3.4% run-up London has actually seen. It's harder to defend as the permanent design for every council after this one, since a council that merely keeps pace with inflation forever would still see its pay driven toward zero under the 2.4-draft text.
+The current 2.4-draft mechanism had no floor for inflation at all: any positive levy-from-rates increase, even one that exactly matches the cost of inflation, adds fully and permanently to the decrement, with no distinction from a levy increase driven by genuine overspending. That's defensible as a temporary, deliberate freeze given the 8.7% / 7.3% / 3.4% run-up London has actually seen. It's harder to defend as the permanent design for every council after this one, since a council that merely keeps pace with inflation forever would still see its pay driven down under the 2.4-draft text.
 
 **What changed:** the mechanism now has two phases.
 
