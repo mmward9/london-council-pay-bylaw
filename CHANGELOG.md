@@ -2,6 +2,45 @@
 
 All notable changes to the Pay Accountable to City Taxpayers (PACT) Bylaw are recorded here. Each entry corresponds to a version line in `rendered/BYLAW.md`. Version-bump rules are documented in `VERSIONING.md`.
 
+## 3.0-draft — 2026-09-14 — The meter is now the municipal tax on a home whose assessment did not change; CPI allowance from the first year
+
+**MAJOR bump** (per `VERSIONING.md`: "A change to the underlying mechanism that ties remuneration to the levy"). Pledges pinned to 2.5-draft and earlier are flagged on the public scoreboard; candidates can re-pledge through the OTP flow.
+
+**Why the change.** The design intent, from the first strategy memo onward, has been that council pay falls with the increase existing homeowners actually bear because of Council's own decision, and not because of anything else. Every draft from 2.2 through 2.5 approximated that with the City's total property tax levy net of assessment growth (the "tax levy increase from rates" figure). That approximation is exact only while MPAC assessments are frozen, as they have been (the 2025→2026 phase-in was 0.00%). It is not what a homeowner pays. A tax bill is assessment × (municipal rate + education rate), plus fees. Council sets the municipal rate in the annual rating by-law; MPAC sets the assessment; the Province sets the education rate; water and wastewater are fees. When MPAC moves assessments again, the levy can stay calm while bills on individual homes jump, or fall while bills rise. 3.0-draft reads Council's decision directly.
+
+**What changed — the trigger.**
+
+- The total municipal tax levy (old (a)(ii)), the levy change percentage (old (a)(iii)) and the assessment growth amount with its deemed-zero default (old (a)(vii)) are deleted. They existed only to approximate a rate. The rate is now read from the rating by-law.
+- New (a)(ii) "residential property class" (*Assessment Act*) and new (a)(iii) "residential municipal tax rate": the municipal-purposes rate for residential property taxable at the full rate in the annual rating by-law, excluding education rates, special local municipality levy rates, and fees.
+- New (a)(iv) "reassessment adjustment factor": the ratio of this year's to last year's total residential assessment on the same set of properties, and 1 in a year with no MPAC reassessment or phase-in. This strips MPAC revaluation out of the meter. Without it, a reassessment year would read a mechanical rate drop as a tax cut and erode the decrement for something MPAC did. New construction is deliberately not adjusted out: new homes lower the rate an existing home pays for a given levy, and that is a real effect existing homeowners feel.
+- New (a)(v) "constant-assessment municipal tax change percentage" = ((R_t × F_t) / R_t−1 − 1) × 100. In a frozen-assessment year this is simply the percentage change in the residential municipal rate, which is the change in the municipal portion of every unchanged-assessment residential bill in the city.
+- Residential class only, one city-wide number. Multi-residential and commercial have their own ratios; measuring them would let council shift burden onto houses. No "average home value" (retargetable by the City). No per-ward figure (would make pay a function of MPAC luck).
+
+**What changed — inflation.**
+
+- The four-year freeze phase of 2.5-draft is removed at the candidate's direction. The CPI allowance applies from the first fiscal year of application. The candidate's personal pledge not to support tax increases on homeowners is a campaign commitment and stands on its own; it is not written into the by-law.
+- The 2.5-draft negative-CPI cliff (a 0.01% increase during −1% CPI added 1.01 points while a 0% change added nothing) is fixed by a new (a)(xii) "CPI allowance" (the CPI percentage or zero, whichever is greater) and a rewritten (a)(xiii): a change at or below zero counts in full and erodes; a change above zero counts only to the extent it exceeds the CPI allowance. The function is continuous at zero for any CPI, and deflation never manufactures a pay cut.
+- The CPI-unavailable default is no longer zero, which was the most aggressive possible default. (a)(xi) now falls back to the most recently determined CPI percentage, then to the Ontario All-items series.
+- The Statistics Canada series is pinned by table: 18-10-0004-01 (Consumer Price Index, monthly, not seasonally adjusted) and 18-10-0005-01 (Consumer Price Index, annual average, not seasonally adjusted). **Correction, same day:** an initial pass of this draft (matching 2.5-draft) cited these tables for a "Consumer Price Index for the London, Ontario Census Metropolitan Area." Queried both tables' GEO dimensions directly via the StatCan WDS API rather than trusting the table description page: 30 members each, and the only Ontario CMAs StatCan publishes CPI for are Ottawa-Gatineau, Toronto, and Thunder Bay. Searched all 18 StatCan tables titled "Consumer Price Index" — none covers London. That series does not exist and never did; the error predates today, back to 2.5-draft. The definition is corrected to the Ontario All-items CPI, not seasonally adjusted — the same series already used in Policy s. 4.1 for citizen members, so this removes a false claim of deliberate divergence from s. 4.1 rather than creating one.
+
+**What changed — recitals and housekeeping.**
+
+- Recitals describe rates and bills, not the levy: the residential municipal rate is Council's most direct decision on the burden borne by homeowners whose assessment has not changed; education rates, MPAC assessment and fees are not Council's decision and are excluded; the one-way recital now states the CPI gate and cross-term persistence.
+- The MCOIA recital cites clause 4(i) specifically (the remuneration paragraph), not section 4 generally.
+- 2.5-draft's "a full council term" language is gone with the freeze; nothing in the by-law now describes a council term.
+- "levy-linkage" is now "property tax linkage" in enacting clause 1 and s. 4.5(h). The section heading is "Permanent Decrement Tied to the Residential Municipal Tax Rate."
+- Treasurer duties (4.5(e)) now publish both years' residential rates, the reassessment adjustment factor and whether a reassessment applied, the constant-assessment change, CPI, CPI allowance, applicable change, the decrement, and final pay. 4.5(i) rounds the factor to four decimal places.
+
+**What stays unchanged:** the accumulated decrement (additive in percentage points, multiplicative application on the combined result of Policy ss. 4.2, 4.3 and 4.4, zero floor, no upper cap), persistence across every base reset (4.5(d)), the Treasurer timing and 60-day backstop with overpayment recovery (4.5(e)(iv)-(v)), self-executing administration, first-year mechanics, the s. 5(3)/8/9/10(2) authority recital, and section 4.5 numbering.
+
+**Worked numbers** (full table in `docs/constant-assessment-example.md`; hypothetical CPI 2.1%): a 3.4% rate increase adds 1.30 points; 2.0% adds nothing; a frozen rate adds nothing; a 1.0% cut erodes 1.00 point; a reassessment year with the roll up 20% and the levy flat shows the rate down 16.67%, a factor of 1.20, and a constant-assessment change of 0.00, so nothing. The published 2024, 2025 and 2026 figures (8.7%, 7.3%, 3.4%) now count against pay only above each year's Ontario CPI; campaign materials that quote them as a raw sum need restating as above-inflation increases, computed from the published StatCan series.
+
+**Verification done for this version (2026-09-14):** CPOL.-70(c)-189 confirmed on the live london.ca policy page (the legislative history line lists it; section 4 runs to 4.4; page last modified June 24, 2026), which resolves an external concern that the page was stale. StatCan table numbers and titles confirmed as above.
+
+**Open items for counsel, deliberately not "fixed" in this draft:** (1) No pay floor: the decrement remains uncapped to zero; the legal status of an office-holder at $0 remuneration is a counsel question. (2) The authority recital stays on the s. 5(3)/8/9/10(2) stack; s. 283 is not re-opened. (3) Cross-term persistence is intentional and is now stated in the recitals. (4) Strong-mayor veto exposure is unchanged; a remuneration by-law is not within the s. 289/290 budget carve-out. (5) New: the Treasurer to confirm that the residential municipal tax rate maps to the rating by-law's residential full-rate line item, and that the reassessment adjustment factor can be computed on a same-properties basis from the returned and revised assessment rolls.
+
+**Known follow-up:** `docs/post-election/solicitor-handoff.md` remains a v12-era memo with a status banner; rev. 3 is still queued for the post-election cycle. The v13 proposal and audit documents in `docs/` describe the levy trigger and are retained as history.
+
 ## 2.5-draft — 2026-09-09 — First term stays an absolute freeze; the mechanism becomes CPI-indexed after that
 
 **MINOR bump** (per `VERSIONING.md`: "adjusting the threshold above which a remuneration reduction kicks in").

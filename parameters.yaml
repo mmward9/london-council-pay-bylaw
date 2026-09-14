@@ -1,6 +1,6 @@
 # PACT Bylaw — parameters.
 #
-# Under the v12 amending-by-law approach, the PACT Bylaw adds a single new
+# Under the amending-by-law approach, the PACT Bylaw adds a single new
 # section 4.5 to the existing City of London Remuneration for Elected
 # Officials and Appointed Citizen Members Policy (CPOL.-70-302 as amended,
 # most recently by CPOL.-70(c)-189, June 23 2026)
@@ -8,7 +8,7 @@
 # The operative compensation parameters — base pay, annual indexing formula,
 # zero floor, wage-freeze pause, recurring base reset — are ALL set by the
 # existing City instruments and are NOT re-invented here. PACT only adds
-# the levy linkage.
+# the property tax rate linkage.
 #
 # This file therefore contains only metadata and verified primary-source
 # references used in the operative bylaw text and renderer. Almost all
@@ -17,13 +17,12 @@
 
 metadata:
   status: "draft, public consultation"
-  version: "2.5-draft"
-  last_substantive_review: "2026-09-09"
+  version: "3.0-draft"
+  last_substantive_review: "2026-09-14"
   campaign_brand: "Pay Accountable to City Taxpayers (PACT) Bylaw"
 
 # Primary source references used by the operative bylaw text. All retrieved
-# directly from ontario.ca and london.ca during the v12 audit pass. Full
-# audit trail in docs/.
+# directly from ontario.ca, london.ca and statcan.gc.ca. Full audit trail in docs/.
 sources:
   existing_remuneration_by_law:
     designation: "CPOL.-70(b)-220"
@@ -33,7 +32,7 @@ sources:
       adopted: "2017-08-22 (By-law No. CPOL.-70-302)"
       amended_2018: "2018-07-24 (By-law No. CPOL.-70(a)-408)"
       amended_2023: "2023-07-25 (By-law No. CPOL.-70(b)-220)"
-      amended_2026: "2026-06-23 (By-law No. CPOL.-70(c)-189) — codifies resolution 2025-C06 parts (d) and (h) as Policy ss. 4.3 (2027-28 Councillor base update) and 4.4 (Deputy Mayor / Budget Chair 8% additional compensation). PACT therefore enacts as s. 4.5; verified against the live policy page 2026-07-09."
+      amended_2026: "2026-06-23 (By-law No. CPOL.-70(c)-189) — codifies resolution 2025-C06 parts (d) and (h) as Policy ss. 4.3 (2027-28 Councillor base update) and 4.4 (Deputy Mayor / Budget Chair 8% additional compensation). PACT therefore enacts as s. 4.5. Verified against the live policy page 2026-07-09 and re-verified 2026-09-14 (legislative history lists CPOL.-70(c)-189; section 4 runs to 4.4; page last modified 2026-06-24)."
 
   municipal_act_2001:
     citation: "Municipal Act, 2001, S.O. 2001, c. 25"
@@ -47,11 +46,30 @@ sources:
       s10_2_p2: "By-laws respecting accountability and transparency"
       s10_2_p3: "By-laws respecting financial management"
       s283_4: "Remuneration is not deemed expenses (s. 283(4)). Note: s. 283(1) addresses local-board remuneration; council remuneration authority rests on the s. 10(2) spheres"
+      s284: "Annual statement of remuneration and expenses; carries the published PACT figures"
       s285: "Fiscal year of a municipality is January 1 to December 31"
-      s290: "Yearly budget of a local municipality; the budget decides the general local municipality levy"
-      s312_1: "Definition of general local municipality levy; the levy measure anchor for s. 4.5(a)(ii)"
+      s290: "Yearly budget of a local municipality. Context only since 3.0-draft: the levy is no longer a PACT input"
+      s312_1: "Definition of special local municipality levy; excluded from the residential municipal tax rate in s. 4.5(a)(iii)"
+      s312_2: "Annual rating by-law; sets the residential municipal tax rate that s. 4.5 measures"
       s284_11: "Head-of-council veto framework; two-thirds council override per s. 284.11(9)"
-      s312_2: "Annual rating by-law authority"
+
+  assessment_act:
+    citation: "Assessment Act, R.S.O. 1990, c. A.31"
+    url: "https://www.ontario.ca/laws/statute/90a31"
+    relied_on: "Residential property class (s. 4.5(a)(ii)); assessment determined by the Municipal Property Assessment Corporation; general reassessment and phase-in, adjusted out of the PACT meter by the reassessment adjustment factor (s. 4.5(a)(iv))"
+
+  education_act:
+    citation: "Education Act, R.S.O. 1990, c. E.2"
+    url: "https://www.ontario.ca/laws/statute/90e02"
+    relied_on: "Education tax rates are set by the Province and are excluded from the residential municipal tax rate (s. 4.5(a)(iii))"
+
+  statistics_canada_cpi:
+    monthly_table: "18-10-0004-01 — Consumer Price Index, monthly, not seasonally adjusted"
+    monthly_url: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401"
+    annual_average_table: "18-10-0005-01 — Consumer Price Index, annual average, not seasonally adjusted"
+    annual_average_url: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000501"
+    series: "All-items, Ontario, not seasonally adjusted (s. 4.5(a)(x)-(xi)); the same series referred to in Policy s. 4.1"
+    verified: "Table numbers, titles, and the GEO dimension member list verified directly against the StatCan WDS getCubeMetadata API 2026-09-14. Correction: earlier drafts (2.5-draft through an initial 3.0-draft pass) cited a 'Consumer Price Index for the London, Ontario Census Metropolitan Area.' Queried both tables' GEO dimensions directly (30 members each): the only Ontario CMAs StatCan publishes CPI for are Ottawa-Gatineau, Toronto, and Thunder Bay. No StatCan table (checked all 18 titled 'Consumer Price Index') covers London. That series does not exist. Corrected to the Ontario All-items series, which does exist and is already the series Policy s. 4.1 uses for citizen members."
 
   council_resolution_2025_C06:
     citation: "Municipal Council resolution 2025-C06 (item 4.1, 13th Report of SPPC, AS AMENDED)"
@@ -70,7 +88,7 @@ sources:
   municipal_conflict_of_interest_act:
     citation: "Municipal Conflict of Interest Act, R.S.O. 1990, c. M.50"
     url: "https://www.ontario.ca/laws/statute/90m50"
-    s4_i_exemption_note: "Member's pecuniary interest in remuneration by reason of being a member is exempt from ss. 5, 5.2, and 5.3 disclosure / disqualification rules."
+    s4_i_exemption_note: "Clause 4(i): a member's pecuniary interest in remuneration by reason of being a member is exempt from the ss. 5, 5.2 and 5.3 disclosure / disqualification rules. Cited by clause in the preamble since 3.0-draft."
 
   council_resourcing_review_task_force:
     final_report_date: "2025-10-03"
@@ -80,9 +98,10 @@ sources:
 # specifies effective date (enacting clause 3) and first-applicable-year
 # behaviour (s. 4.5(f)).
 bylaw_effective_date_note: |
-  Effective the day of passage. First annual adjustment under the levy-linked
-  clause applies on the first January 1 occurring after the by-law comes
-  into force, using the total municipal tax levy (the general local
-  municipality levy decided in the City's budget, Municipal Act s. 312(1))
-  net of the Treasurer-published assessment growth amount, compared to the
-  total municipal tax levy for the immediately preceding fiscal year.
+  Effective the day of passage. Section 4.5 first applies to remuneration for
+  the first fiscal year beginning on or after passage, comparing the residential
+  municipal tax rate set in that year's annual rating by-law (Municipal Act
+  s. 312(2)), adjusted by the reassessment adjustment factor, to the residential
+  municipal tax rate for the immediately preceding fiscal year. Only the portion
+  of the resulting constant-assessment increase above the CPI allowance adds to
+  the accumulated decrement; a decrease erodes it, to a floor of zero.
