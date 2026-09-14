@@ -2,9 +2,17 @@
 
 This directory contains the working documents that produced the current operative bylaw text. Each file is a primary-source artefact of the design, audit, or political record. They are kept here for transparency: every reader of this repository can trace why the bylaw reads the way it reads.
 
-## v13 series (current — `2.2-draft`)
+## 3.0-draft (current)
 
-The v13 series is the current architecture. It replaces the v12 single-clause modifier of section 4.2 with a parallel persistent ledger applied multiplicatively on top of section 4.2 and any future base re-pegs. The decrement persists across all base-setting events including the recurring re-pegs directed by resolution 2025-C06 Part (d). Three Perplexity reviews completed in the same thread on 2026-05-23: a comprehensive Deep Research audit on v13, a delta-review on v13.1, and a confirmation review on v13.2.
+3.0-draft keeps the v13 decrement ledger and replaces its trigger. The by-law no longer measures the property tax levy; it measures the residential municipal tax rate Council sets in the annual rating by-law, adjusted for MPAC reassessment, on a home whose assessment did not change, with a CPI allowance from the first year. The change and its rationale are recorded in [`../CHANGELOG.md`](../CHANGELOG.md).
+
+| File | What it is |
+|---|---|
+| [constant-assessment-example.md](constant-assessment-example.md) | One-page worked example of the 3.0-draft meter: the formula, the CPI allowance, a table of scenarios including a reassessment year, and the public line. |
+
+## v13 series (decrement ledger — architecture retained; levy trigger superseded by 3.0-draft)
+
+The v13 series introduced the current architecture: a parallel persistent ledger applied multiplicatively on top of section 4.2 and any future base re-pegs, persisting across all base-setting events including the recurring re-pegs directed by resolution 2025-C06 Part (d). These documents describe the ledger with its original levy trigger; the ledger is unchanged in 3.0-draft, the trigger is not. Three Perplexity reviews completed in the same thread on 2026-05-23: a comprehensive Deep Research audit on v13, a delta-review on v13.1, and a confirmation review on v13.2.
 
 | File | What it is |
 |---|---|

@@ -16,9 +16,10 @@ deep_research_companion: PACT Bylaw Refactor Proposal v12 — Comprehensive Audi
 > 2. **Statutory citations.** s. 11(2) was corrected to s. 10(2) paragraphs 1, 2 and 3 (single-tier grant) in 2.3-draft; 2.4-draft also recites s. 9 (natural person powers). s. 283 was verified 2026-07-09 from the consolidated Act: s. 283(1) covers local-board remuneration only, so no remuneration-specific council provision competes with the broad-powers chain.
 > 3. **Section numbering.** Item 5(f)'s predicted collision occurred: the City amended the Policy on June 23, 2026 (By-law No. CPOL.-70(c)-189), codifying resolution 2025-C06 parts (d) and (h) as Policy ss. 4.3 and 4.4. PACT now enacts as s. 4.5; confirm numbering against the then-current Policy at introduction.
 > 4. **Item 4 (Mayor coverage)** is closed in 2.4-draft by the new definition 4.5(a)(viii) ("elected official" means the Mayor and every member of Council). The belt-and-suspenders confirmation remains available but is no longer load-bearing.
-> 5. **MCOIA s. 4** (exemption from ss. 5, 5.2, 5.3) is now recited in the by-law preamble.
+> 5. **MCOIA s. 4** (exemption from ss. 5, 5.2, 5.3) is now recited in the by-law preamble; since 3.0-draft the recital cites clause 4(i) specifically.
+> 6. **Trigger (3.0-draft, 2026-09-14).** The measure is no longer the levy. Section 4.5 now reads the residential municipal tax rate from the annual rating by-law, adjusted by a reassessment adjustment factor, on a home whose assessment did not change, with a CPI allowance from the first year of application. Item 2's Treasurer mapping of the levy definition to rating by-law line items is superseded by a narrower question: confirm the residential full-rate municipal line item, and confirm that a same-properties reassessment adjustment factor can be computed from the returned and revised assessment rolls. The open counsel items are listed in `CHANGELOG.md` (3.0-draft entry).
 >
-> A rev. 3 rewrite against 2.4-draft is queued for the post-election cycle. Sources for the corrections: `CHANGELOG.md` (2.3-draft, 2.4-draft entries) and the 2026-07-09 verification pass referenced there.
+> A rev. 3 rewrite against 3.0-draft is queued for the post-election cycle. Sources for the corrections: `CHANGELOG.md` (2.3-draft through 3.0-draft entries) and the 2026-07-09 and 2026-09-14 verification passes referenced there.
 
 
 
