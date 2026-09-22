@@ -2,6 +2,16 @@
 
 All notable changes to the Pay Accountable to City Taxpayers (PACT) Bylaw are recorded here. Each entry corresponds to a version line in `rendered/BYLAW.md`. Version-bump rules are documented in `VERSIONING.md`.
 
+## 3.1-draft — 2026-09-22 — Add PACT Savings reporting duty; drafting style cleanup
+
+**MINOR bump** (per `VERSIONING.md`: "adding a new clause that creates a new obligation or constraint on council" is an explicit MINOR-bump example). Pledges pinned to 3.0-draft flip to "needs reaffirming" on the public tracker.
+
+**What changed.** New subsection **4.5(j) "PACT Savings"** requires the City Treasurer to calculate the total dollar amount by which section 4.5 reduces Mayor/Councillor remuneration each year (the "PACT Savings") and present that figure by name in the following year's published budget documents, as an amount available for Council's consideration as a surplus carried forward under s.290(4) of the *Municipal Act, 2001* against the property tax levy. This is a mandatory calculation-and-publication duty only; it cross-references 4.5(g), which already establishes that section 4.5 does not alter or restrict Council's authority over the tax rate or levy in any fiscal year. A prior legal review (checked against verbatim *Municipal Act* ss. 290/312/417 text) found no mechanism by which one council's by-law can bind a future council's levy decision, so 4.5(j) is deliberately a transparency/reporting duty, not a binding levy directive.
+
+**Housekeeping.** The two em-dashes in the operative bylaw text (the "Note to readers" aside and the section 4.5 heading) were replaced with parentheses and an en-dash respectively, matching actual City of London by-law drafting conventions rather than Ontario e-Laws' em-dash heading style, which London's own instruments don't use.
+
+**What stays unchanged:** every mechanism element in section 4.5(a) through (i) — the residential-municipal-tax-rate trigger, the reassessment adjustment factor, the CPI allowance and applicable-change-percentage calculation, the accumulated decrement and its multiplicative application to remuneration, and its persistence across re-peg events — is untouched by this bump. 4.5(j) is additive only.
+
 ## 3.0-draft — 2026-09-14 — The meter is now the municipal tax on a home whose assessment did not change; CPI allowance from the first year
 
 **MAJOR bump** (per `VERSIONING.md`: "A change to the underlying mechanism that ties remuneration to the levy"). Pledges pinned to 2.5-draft and earlier are flagged on the public scoreboard; candidates can re-pledge through the OTP flow.
