@@ -1,10 +1,10 @@
 # Pay Accountable to City Taxpayers (PACT) Bylaw
 
-**Status:** draft, public consultation | Version: 3.0-draft | Last substantive review: 2026-09-14
+**Status:** draft, public consultation | Version: 3.1-draft | Last substantive review: 2026-09-22
 
 ---
 
-> **Note to readers.** This bylaw is a single-section amendment to the existing City of London Council Policy "Remuneration for Elected Officials and Appointed Citizen Members Policy" (adopted by By-law No. CPOL.-70-302 and amended by By-laws No. CPOL.-70(a)-408, CPOL.-70(b)-220, and CPOL.-70(c)-189). It adds one new section — section 4.5 — to that existing instrument. It does NOT re-enact base pay, annual indexing under existing section 4.2, the zero floor and wage-freeze pause in section 4.2, the 2027-2028 Councillor base-compensation update codified in existing section 4.3, the Deputy Mayor and Budget Chair additional compensation in existing section 4.4, or any other component already in the City framework. Those provisions continue to operate untouched; PACT applies its decrement to their combined result.
+> **Note to readers.** This bylaw is a single-section amendment to the existing City of London Council Policy "Remuneration for Elected Officials and Appointed Citizen Members Policy" (adopted by By-law No. CPOL.-70-302 and amended by By-laws No. CPOL.-70(a)-408, CPOL.-70(b)-220, and CPOL.-70(c)-189). It adds one new section (section 4.5) to that existing instrument. It does NOT re-enact base pay, annual indexing under existing section 4.2, the zero floor and wage-freeze pause in section 4.2, the 2027-2028 Councillor base-compensation update codified in existing section 4.3, the Deputy Mayor and Budget Chair additional compensation in existing section 4.4, or any other component already in the City framework. Those provisions continue to operate untouched; PACT applies its decrement to their combined result.
 >
 > **Why section 4.5.** On June 23, 2026 the City amended the Policy (By-law No. CPOL.-70(c)-189) to codify Council resolution 2025-C06 parts (d) and (h) as new Policy sections 4.3 and 4.4. Re-verified against the live london.ca policy page on 2026-09-14: the legislative history lists CPOL.-70(c)-189, section 4 runs to section 4.4, and the page was last modified June 24, 2026. PACT therefore enacts as section 4.5. The section number is to be confirmed against the then-current Policy at the time the carrying by-law is introduced.
 >
@@ -42,7 +42,7 @@
 
 2. The new section 4.5 of the Policy is:
 
-## Section 4.5 — Permanent Decrement Tied to the Residential Municipal Tax Rate
+## Section 4.5 – Permanent Decrement Tied to the Residential Municipal Tax Rate
 
 **4.5(a) Definitions.** For the purpose of this section:
 
@@ -119,6 +119,16 @@ The duties in this subsection are automatic and self-executing upon this section
 **4.5(h) Internal Priority.** If there is any conflict between this section and any other provision of this Policy, this section prevails to the extent of the conflict. For greater certainty, this subsection applies only to interpretation conflicts within section 4 of this Policy relating to annual adjustment, base compensation, and property tax linkage, and nothing in this section prevents sections 4.2, 4.3 and 4.4 of this Policy from operating according to their terms in the computation under step (i) of subsection (c) of this section.
 
 **4.5(i) Rounding.** All percentage and percentage-point calculations under this section shall be rounded to two decimal places at each computational step, except the reassessment adjustment factor, which shall be rounded to four decimal places.
+
+**4.5(j) PACT Savings: calculation and presentation.** In addition to the duties in subsection (e), the City Treasurer shall:
+
+(i) calculate, for each fiscal year in which this section is in force, the total dollar amount by which remuneration for the Mayor and all Councillors, in aggregate, is reduced under subsection (c) of this section relative to the amount that would otherwise have been payable absent the accumulated decrement (the "PACT Savings"),
+
+(ii) maintain a record of the PACT Savings for each fiscal year in the records of the office of the City Clerk, and
+
+(iii) present the PACT Savings for the current fiscal year, identified by that name and as a distinct line item, in the City's published annual budget documents for the following fiscal year, as an amount available for Council's consideration as a surplus carried forward under subsection 290(4) of the *Municipal Act, 2001* against the property tax levy for that following fiscal year.
+
+For greater certainty, this subsection creates a duty to calculate and present the PACT Savings only, and does not require, direct, or restrict any particular use of that amount by Council in any budget or rating by-law; subsection (g) of this section applies without modification to this subsection.
 
 ## Coming Into Force
 
