@@ -1,6 +1,69 @@
 # Candidate pledge tracker for the Pay Accountable to City Taxpayers Bylaw.
 #
-# Each entry records a publicly verifiable position. See pledges/README.md
-# for the schema and verification process.
+# This file is GENERATED from the live ward9.online pledge tracker.
+# Do not hand-edit -- run `python build/sync_pledges.py` to refresh it.
+# See pledges/README.md for the schema and verification process.
 
-candidates: []
+candidates:
+- name: Lawrence-Zachary Howe
+  ward: mayor
+  position: mayor
+  status: opposes
+  source: https://ward9.online/pledge/
+  date_recorded: '2026-08-24'
+  statement: I don't oppose the spirit of this bill, but the execution doesn't hold water for me. If you
+    tie any raise in taxes to a drop in salary, you incentivize councilors to never raise taxes - sounds
+    good, but that means that inflation will rapidly diminish the city's available tax pool. Additionally,
+    it means that taxes can never be lowered because to do so accelerates the obsolescence of the tax
+    pool. A potential pushback would be that city hall can find inefficiencies or stamp out corruption
+    to make the budget stretch farther but there's a limit to how far that can go so it only delays the
+    inflation problem, it doesn't eliminate it - besides expecting city hall to suddenly become competent
+    is fanciful. My approach to this same issue comes from a different angle - creating additional revenue
+    sources to ease the burden on tax payers. That remains the approach I think will be most effective.
+  notes: Pledged against bylaw version 2.4-draft (commit 558196312b58). Synced from https://ward9.online/api/pledges
+    -- do not hand-edit, re-run build/sync_pledges.py instead.
+- name: Naomi Nadea
+  ward: '6'
+  position: councillor
+  status: opposes
+  source: https://ward9.online/pledge/
+  date_recorded: '2026-08-24'
+  statement: 'I am publicly stating my opposition to the proposed pay increase for London City Council.
+    After listening directly to taxpaying residents across our community, I have heard a consistent message:
+    many Londoners do not believe the current level of municipal leadership and performance justifies
+    increasing council compensation at this time. For many families, seniors, workers, and individuals
+    living on limited incomes, every dollar matters. As someone who personally lives below the poverty
+    line, I understand what it means to struggle to meet basic expenses and make difficult financial decisions.
+    I believe elected officials should first demonstrate that they are delivering meaningful results for
+    the residents who pay their salaries. My position is not about disrespecting the responsibilities
+    of elected office. It is about accountability, priorities, and listening to the people.'
+  notes: Pledged against bylaw version 2.4-draft (commit 558196312b58). Synced from https://ward9.online/api/pledges
+    -- do not hand-edit, re-run build/sync_pledges.py instead.
+- name: Waseem Kazzah
+  ward: '7'
+  position: councillor
+  status: opposes
+  source: https://ward9.online/pledge/
+  date_recorded: '2026-08-19'
+  statement: Residents deserve a councillor who is fully available, responsive and focused on representing
+    them at City Hall. I believe compensation should be benchmarked against comparable municipalities
+    and tied to responsibilities, performance, recruitment needs and taxpayers' ability to pay. Therefore
+    I strongly oppose your bylaw.
+  notes: Pledged against bylaw version 2.4-draft (commit 558196312b58). Synced from https://ward9.online/api/pledges
+    -- do not hand-edit, re-run build/sync_pledges.py instead.
+- name: Matt Millar
+  ward: '9'
+  position: councillor
+  status: supports
+  source: https://ward9.online/pledge/
+  date_recorded: '2026-09-15'
+  notes: Pledged against bylaw version 3.0-draft (commit 77e6b849aad3). Synced from https://ward9.online/api/pledges
+    -- do not hand-edit, re-run build/sync_pledges.py instead.
+- name: Gurinder Pal Singh
+  ward: '14'
+  position: councillor
+  status: supports
+  source: https://ward9.online/pledge/
+  date_recorded: '2026-09-06'
+  notes: Pledged against bylaw version 2.4-draft (commit 558196312b58). Synced from https://ward9.online/api/pledges
+    -- do not hand-edit, re-run build/sync_pledges.py instead.
